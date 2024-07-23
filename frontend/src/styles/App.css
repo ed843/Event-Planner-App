@@ -1,0 +1,16 @@
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex-grow: 1;
+    margin-top: 60px; /* Adjust this value based on your navbar height */
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-top: 50px; /* Adjust for smaller screens if needed */
+    }
+}

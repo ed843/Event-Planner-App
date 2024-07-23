@@ -1,0 +1,129 @@
+.event-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.event-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-header {
+  padding: 20px;
+  position: relative;
+}
+
+.event-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 0px 0;
+  color: #333;
+}
+
+.event-date {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #666;
+  position: absolute;
+  float: left;
+}
+
+.event-body {
+  padding: 0 20px 20px;
+}
+
+.event-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.event-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.event-location,
+.event-category {
+  display: flex;
+  align-items: center;
+}
+
+.event-location:before,
+.event-category:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.event-location:before {
+  background-image: url("../assets/location_icon.svg");
+}
+
+.event-category:before {
+  background-image: url("../assets/category_icon.svg");
+}
+
+.event-footer {
+  background-color: #f8f8f8;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.delete-button {
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #ff6b81;
+}
+
+/* Category-based color accents */
+.event-container[data-category="Music"] {
+  border-top: 4px solid #1db954;
+}
+.event-container[data-category="Food"] {
+  border-top: 4px solid #ffa502;
+}
+.event-container[data-category="Art"] {
+  border-top: 4px solid #70a1ff;
+}
+.event-container[data-category="Sports"] {
+  border-top: 4px solid #ff4757;
+}
+.event-container[data-category="Travel"] {
+  border-top: 4px solid #f007f0;
+}
+.event-container[data-category="Tech"] {
+  border-top: 4px solid #2ed573;
+}
+.event-container[data-category="Fashion"] {
+  border-top: 4px solid #ff6348;
+}
+.event-container[data-category="Health"] {
+  border-top: 4px solid #ff7f50;
+}
+.event-container[data-category="Job"] {
+  border-top: 4px solid #7bed9f;
+}

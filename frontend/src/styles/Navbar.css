@@ -1,0 +1,21 @@
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #fff; /* Add a background color */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add a subtle shadow */
+}
+
+@media (max-width: 768px) {
+  .DesktopNavigation {
+      display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .MobileNavigation {
+      display: none;
+  }
+}
